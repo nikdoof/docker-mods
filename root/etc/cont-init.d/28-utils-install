@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+apt-get update
+apt-get install --no-install-recommends rsync sqlite3
+
+chown -R root:root /root
+chmod -R 600 /root/.ssh

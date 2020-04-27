@@ -4,16 +4,16 @@ language: shell
 
 branches:
   only:
-    - <baseimagename>-<modname> #replace variables, omit brackets
+    - arr-backup #replace variables, omit brackets
 
 services:
   - docker
 
 env:
   global:
-    - DOCKERHUB="linuxserver/mods" #don't modify
-    - BASEIMAGE="baseimagename" #replace
-    - MODNAME="modname" #replace
+    - DOCKERHUB="nikdoof/mods" #don't modify
+    - BASEIMAGE="arr" #replace
+    - MODNAME="backup" #replace
 
 jobs:
   include:

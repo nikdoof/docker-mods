@@ -1,0 +1,8 @@
+#!/usr/bin/with-contenv bash
+
+# Run a rsync of /config to /config-source
+if [ -d /config-source ]; then
+    while sleep 1m;
+        rsync -rtu /config/ /config-source/
+    done
+fi
