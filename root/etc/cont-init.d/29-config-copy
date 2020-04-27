@@ -2,7 +2,5 @@
 
 # If the config-source directory exists, copy over to /config
 if [ -d /config-source ]; then
-    echo ".backup /config/nzbdrone_bak.db" | sqlite3 /config/nzbdrone.db
-    echo ".backup /config/logs_bak.db" | sqlite3 /config/logs.db
     rsync -rt /config-source/ /config/
 fi
