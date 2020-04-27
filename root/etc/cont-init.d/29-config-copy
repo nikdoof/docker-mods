@@ -4,4 +4,5 @@
 if [ -d /config-source ]; then
     echo "Copying config from source..."
     rsync -rt /config-source/ /config/
+    chown -R abc:abc /config
 fi
