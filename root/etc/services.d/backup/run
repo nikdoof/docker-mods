@@ -3,6 +3,7 @@
 # Run a rsync of /config to /config-source
 if [ -d /config-source ]; then
     while sleep 5m; do
+        echo "Backing up configuration to /config-source/"
         echo ".backup /config/nzbdrone_bak.db" | sqlite3 /config/nzbdrone.db
         echo ".backup /config/logs_bak.db" | sqlite3 /config/logs.db
         rsync -rtu /config/ /config-source/
