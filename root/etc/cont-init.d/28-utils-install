@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 apt-get update
-apt-get install --no-install-recommends rsync sqlite3
+apt-get install --assume-yes --no-install-recommends rsync sqlite3
